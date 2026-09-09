@@ -79,7 +79,7 @@ Summary of model metrics evaluated on the test dataset:
 | **Logistic Regression**          |   78.69%   |   76.32%   |   87.88%   |   81.69%   |     🥉 3rd Place      |
 | **Decision Tree**                |   72.13%   |   71.05%   |   81.82%   |   76.06%   |     👎 4th Place      |
 
-![Comparison Chart](./model%20comparison%20char.png)
+![Comparison Chart](./model%20comparison%20char.jpg)
 
 > 📌 **Support Vector Machine (SVM)** achieved the highest performance across all evaluation metrics, excelling in **Recall (93.94%)** and **F1-Score (86.11%)**, making it the most reliable model for medical risk detection where minimizing false negatives is critical.
 
@@ -94,3 +94,7 @@ Summary of model metrics evaluated on the test dataset:
 ├── scaler.pkl                     # Serialized StandardScaler object
 └── README.md                      # Project documentation
 ```
+
+---
+
+\- [Tony White ✍️](https://github.com/itstonywhite)
