@@ -1,8 +1,12 @@
 # 🫀 Heart Attack Risk Prediction & Classification
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
-[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-v1.0%2B-orange.svg)](https://scikit-learn.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.0%2B-orange.svg)](https://scikit-learn.org/)
+[![Seaborn](https://img.shields.io/badge/Seaborn-0.11%2B-red.svg)](https://seaborn.pydata.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-1.0%2B-orange.svg)](https://pandas.pydata.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-1.18%2B-blue.svg)](https://numpy.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-3.2%2B-green.svg)](https://matplotlib.org/)
+[![joblib](https://img.shields.io/badge/joblib-1.0%2B-lightgrey.svg)](https://joblib.readthedocs.io/)
 
 A Machine Learning classification project designed to predict a patient's risk of a heart attack based on clinical and medical records.
 
