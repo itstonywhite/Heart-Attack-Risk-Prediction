@@ -101,4 +101,4 @@ Summary of model metrics evaluated on the test dataset:
 
 ---
 
-\- [Tony White ✍️](https://github.com/itstonywhite)
+\- [Tony White](https://github.com/itstonywhite) ✍️
