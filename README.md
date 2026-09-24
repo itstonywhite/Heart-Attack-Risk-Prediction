@@ -1,12 +1,13 @@
 # 🫀 Heart Attack Risk Prediction & Classification
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
-[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.0%2B-orange.svg)](https://scikit-learn.org/)
-[![Seaborn](https://img.shields.io/badge/Seaborn-0.11%2B-red.svg)](https://seaborn.pydata.org/)
-[![Pandas](https://img.shields.io/badge/Pandas-1.0%2B-orange.svg)](https://pandas.pydata.org/)
-[![NumPy](https://img.shields.io/badge/NumPy-1.18%2B-blue.svg)](https://numpy.org/)
-[![Matplotlib](https://img.shields.io/badge/Matplotlib-3.2%2B-green.svg)](https://matplotlib.org/)
-[![joblib](https://img.shields.io/badge/joblib-1.0%2B-lightgrey.svg)](https://joblib.readthedocs.io/)
+[![NumPy](https://img.shields.io/badge/NumPy-1.20%2B-013243.svg)](https://numpy.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-1.3%2B-150458.svg)](https://pandas.pydata.org/)
+[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-v1.0%2B-orange.svg)](https://scikit-learn.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-3.5%2B-11557c.svg)](https://matplotlib.org/)
+[![Seaborn](https://img.shields.io/badge/Seaborn-0.14%2B-4c72b0.svg)](https://seaborn.pydata.org/)
+[![Joblib](https://img.shields.io/badge/Joblib-1.1%2B-3b7a57.svg)](https://joblib.readthedocs.io/)
 
 A Machine Learning classification project designed to predict a patient's risk of a heart attack based on clinical and medical records.
 
@@ -83,7 +84,7 @@ Summary of model metrics evaluated on the test dataset:
 | **Logistic Regression**          |   78.69%   |   76.32%   |   87.88%   |   81.69%   |     🥉 3rd Place      |
 | **Decision Tree**                |   72.13%   |   71.05%   |   81.82%   |   76.06%   |     👎 4th Place      |
 
-![Comparison Chart](./model%20comparison%20char.jpg)
+![Comparison Chart](./Plots/model%20comparison%20char.jpg)
 
 > 📌 **Support Vector Machine (SVM)** achieved the highest performance across all evaluation metrics, excelling in **Recall (93.94%)** and **F1-Score (86.11%)**, making it the most reliable model for medical risk detection where minimizing false negatives is critical.
 
@@ -96,9 +97,11 @@ Summary of model metrics evaluated on the test dataset:
 ├── heart_attack_prediction.ipynb  # Main Jupyter Notebook
 ├── best_heart_disease_model.pkl   # Serialized best trained ML model (SVM)
 ├── scaler.pkl                     # Serialized StandardScaler object
+├── Plots                          # Plots & Charts
+├── requirements.txt               # Dependencies
 └── README.md                      # Project documentation
 ```
 
 ---
 
-\- [Tony White](https://github.com/itstonywhite) ✍️
+\- [Tony White ✍️](https://github.com/itstonywhite)
