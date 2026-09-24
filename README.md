@@ -93,6 +93,7 @@ Summary of model metrics evaluated on the test dataset:
 ## 📂 Repository Structure
 
 ```text
+.
 ├── heart.csv                      # Clinical Heart Disease Dataset
 ├── heart_attack_prediction.ipynb  # Main Jupyter Notebook
 ├── best_heart_disease_model.pkl   # Serialized best trained ML model (SVM)
@@ -104,4 +105,4 @@ Summary of model metrics evaluated on the test dataset:
 
 ---
 
-\- [Tony White ✍️](https://github.com/itstonywhite)
+\- [Tony White](https://github.com/itstonywhite) ✍️
