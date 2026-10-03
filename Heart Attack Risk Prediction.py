@@ -19,20 +19,20 @@ sns.set_theme(style="whitegrid")
 df = pd.read_csv('heart.csv')
 
 # View dataset dimensions and preview
-# print(f"Dataset Shape: {df.shape}")
-# print("\nFirst 5 rows:")
-# print(df.head())
+print(f"Dataset Shape: {df.shape}")
+print("\nFirst 5 rows:")
+print(df.head())
 
 # Summary statistics and info
-# print("\nDataset Info:")
-# df.info()
+print("\nDataset Info:")
+df.info()
 
-# print("\nMissing Values:")
-# print(df.isnull().sum())
+print("\nMissing Values:")
+print(df.isnull().sum())
 
 # Remove duplicate rows
 duplicate_count = df.duplicated().sum()
-# print(f"\nNumber of duplicate rows found: {duplicate_count}")
+print(f"\nNumber of duplicate rows found: {duplicate_count}")
 
 if duplicate_count > 0:
     df = df.drop_duplicates().reset_index(drop=True)
@@ -90,8 +90,8 @@ for name, model in models.items():
 
 # Convert evaluation metrics into a readable DataFrame
 results_df = pd.DataFrame(results).T.drop(columns=['Confusion Matrix', 'Model Object'])
-# print("--- Model Performance Comparison ---")
-# print(results_df.round(4))
+print("--- Model Performance Comparison ---")
+print(results_df.round(4))
 
 # Plot evaluation metrics bar chart
 ax = results_df.plot(kind='bar', figsize=(10, 6), width=0.8)
@@ -101,9 +101,9 @@ plt.ylim(0, 1.1)
 plt.xticks(rotation=0)
 plt.legend(loc='lower right')
 plt.tight_layout()
-# plt.show() # Renders the plot
+plt.show() # Renders the plot
 
-# print("-"*100)
+print("-"*100)
 
 # Plot Confusion Matrices for all models
 fig, axes = plt.subplots(2, 2, figsize=(10, 8))
@@ -116,20 +116,20 @@ for idx, (name, metrics) in enumerate(results.items()):
     axes[idx].set_ylabel('True Label')
 
 plt.tight_layout()
-# plt.show() # Renders the plot
+plt.show() # Renders the plot
 
 # Identify best model using F1-Score
 best_model_name = results_df['F1-Score'].astype(float).idxmax()
 best_model = results[best_model_name]['Model Object']
 
-# print(f"Top Performing Model: {best_model_name}")
-# print(f"F1-Score: {results_df.loc[best_model_name, 'F1-Score']:.4f}")
+print(f"Top Performing Model: {best_model_name}")
+print(f"F1-Score: {results_df.loc[best_model_name, 'F1-Score']:.4f}")
 
 # Save the best model and scaler to disk
 joblib.dump(best_model, 'best_heart_disease_model.pkl')
 joblib.dump(scaler, 'scaler.pkl')
 
-# print("\nModel artifact ('best_heart_disease_model.pkl') and scaler ('scaler.pkl') saved successfully!")
+print("\nModel artifact ('best_heart_disease_model.pkl') and scaler ('scaler.pkl') saved successfully!")
 
 
 # Tony White ✍️
