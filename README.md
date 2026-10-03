@@ -96,7 +96,7 @@ Summary of model metrics evaluated on the test dataset:
 .
 ├── heart.csv                      # Clinical Heart Disease Dataset
 ├── heart_attack_prediction.ipynb  # Main Jupyter Notebook
-├── heart_attack_prediction.ipynb  # Main Python Codes
+├── heart_attack_prediction.py     # Main Python Codes
 ├── best_heart_disease_model.pkl   # Serialized best trained ML model (SVM)
 ├── scaler.pkl                     # Serialized StandardScaler object
 ├── Plots                          # Plots & Charts
